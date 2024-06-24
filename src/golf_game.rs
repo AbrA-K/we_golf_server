@@ -167,8 +167,6 @@ impl Wind {
             strenght: rng.gen_range(0.8..1.0),
             direction: rng.gen_range(0.8..(2.0 * PI)),
         };
-        println!("new strenght: {}", wind.strenght);
-        println!("new direction: {}", wind.direction);
         return wind;
     }
 
@@ -177,8 +175,6 @@ impl Wind {
         let mut rng = rand::thread_rng();
         self.strenght = rng.gen_range(0.8..1.0);
         self.direction = rng.gen_range(0.8..(2.0 * PI));
-        println!("new strenght: {}", self.strenght);
-        println!("new direction: {}", self.direction);
     }
 }
 

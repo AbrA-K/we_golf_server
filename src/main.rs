@@ -36,6 +36,7 @@ fn game_loop(rx: Receiver<GameCommand>) {
         let mut golf_file = OpenOptions::new()
             .truncate(true)
             .write(true)
+            .create(true)
             .open("golf_info.json")
             .unwrap();
         golf_file.write(&my_game_serialized).unwrap();
