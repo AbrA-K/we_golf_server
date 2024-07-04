@@ -3,12 +3,12 @@
 We use rust bindings for bluez, a bluethooth library for linux.
 - Fedora(-based)
 ```
-  sudo dnf in bluez-libs-devel
+  sudo dnf in bluez-libs-devel dbus-devel pkgconf-pkg-config
 ```
 
 - Debian(-based)
 ```
-  sudo apt install libbluethooth-dev
+  sudo apt install libbluethooth-dev libdbus-1-dev pkg-config
 ```
 
 ### Building
